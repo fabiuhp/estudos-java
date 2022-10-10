@@ -26,3 +26,10 @@
 - As versões da 12 até 16 foram ***FR***.
 - Java 17, a ***LTS*** mais recente. Lançada em setembro de 2021. Veio com todas as funcionalidades acumuladas e aprovadas das versões ***FR*** anteriores.
 - Em 2021, a Oracle propos lançar uma LTS a cada 2 anos. O Java 21 provavelmente será uma LTS. Em setembro de 2023.
+
+## Conhecendo as distribuições de JDKs e licenças de uso
+
+- Existem diversas opções o que faz com que você não dependa de apenas um fornecedor.
+- Existe o Java Community Process, um site que cria as regras e padrões que definem como uma instituição ou empresa, tem que seguir.
+- OpenJDK por exemplo, é a implementação das referências da JCP. O código fonte é aberto.
+- Existem vários: Oracle OpenJDK, Eclipse Temurin, Amazon Corretto, etc...
