@@ -6,6 +6,7 @@ public class ExameCortisol {
 
         System.out.print("Cortisol: ");
         double cortisol = sc.nextDouble();
+        sc.close();
 
         // Cortisol ideal é de 6 a 18.4
         // Uso de operadores de comparação && ou || (and/or)
