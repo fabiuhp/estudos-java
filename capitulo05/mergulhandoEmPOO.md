@@ -6,3 +6,5 @@ Exemplo utilizado: avião.
 **Comportamentos**: Ligar turbinas, desligar turbinas, aumentar potencia, diminuir potencia, mudar de direção, abastecer.
 
 Reforçando ideias de instanciação, o que são cada objetos.
+
+**Composição**: uma classe referencie objetos de outras classes por meio das variáveis de instancia, para modelar relacionamento entre objetos.
