@@ -12,7 +12,6 @@ public class Principal {
         meuCarro.modelo = "Pulse";
         meuCarro.pessoa = fabio;
 
-        System.out.println(meuCarro.fabricante);
-        System.out.println(meuCarro.pessoa.nome);
+        meuCarro.calcularValorRevenda();
     }
 }
