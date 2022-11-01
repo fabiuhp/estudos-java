@@ -21,7 +21,7 @@ public class Principal {
         carro2.pessoa = fabio;
         carro2.precoCompra = 200000;
 
-        carro1.calcularValorRevenda();
-        carro2.calcularValorRevenda();
+        System.out.printf("Valor revenda: %6.2f%n", carro1.calcularValorRevenda());
+        System.out.printf("Valor revenda: %6.2f%n", carro2.calcularValorRevenda());
     }
 }
