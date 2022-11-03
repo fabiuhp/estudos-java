@@ -12,6 +12,10 @@ public class Carro {
         return 2022 - anoFabricacao;
     }
 
+    double calcularIpva() {
+        return calcularValorRevenda() * 0.04;
+    }
+
     double calcularValorRevenda() {
         int vidaUtilEmAnos = 20;
         int tempoDeUsoEmAnos = calcularTempoDeUsoEmAnos();
@@ -28,5 +32,6 @@ public class Carro {
     void imprimirResumoDepreciacao() {
         System.out.printf("Valor revenda: %6.2f%n", calcularValorRevenda());
         System.out.printf("Tempo de uso em anos: %d%n", calcularTempoDeUsoEmAnos());
+        System.out.printf("Valor IPVA: %.2f%n", calcularIpva());
     }
 }
