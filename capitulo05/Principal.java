@@ -12,10 +12,10 @@ public class Principal {
         carro1.fabricante = "Fiat";
         carro1.modelo = "Pulse";
         carro1.pessoa = fabio;
-        carro1.precoCompra = 120000;
+        carro1.precoCompra = 0;
 
         carro2.cor = "Azul";
-        carro2.anoFabricacao = 2022;
+        carro2.anoFabricacao = 2000;
         carro2.fabricante = "BMW";
         carro2.modelo = "X1";
         carro2.pessoa = fabio;
