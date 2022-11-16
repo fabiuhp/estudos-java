@@ -1,4 +1,4 @@
-package capitulo05;
+package capitulo05.exemplos;
 
 public class Pessoa {
     String nome;
