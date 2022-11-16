@@ -1,10 +1,8 @@
 package capitulo05.imc;
 
-public class Paciente {
-    double peso;
-    double altura;
+public class CalculadoraImc {
     
-    IndiceMassaCorporal calcularIndiceMassaCorporal() {
+    IndiceMassaCorporal calcular(double peso, double altura) {
         IndiceMassaCorporal imc = new IndiceMassaCorporal();
         imc.resultado = peso / (altura * altura);
         imc.peso = peso;

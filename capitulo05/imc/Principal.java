@@ -2,11 +2,11 @@ package capitulo05.imc;
 
 public class Principal {
     public static void main(String[] args) {
-        Paciente paciente = new Paciente();
-        paciente.altura = 1.82;
-        paciente.peso = 175;
+        CalculadoraImc calculadoraImc = new CalculadoraImc();
+        calculadoraImc.altura = 1.82;
+        calculadoraImc.peso = 175;
 
-        IndiceMassaCorporal imc = paciente.calcularIndiceMassaCorporal();
+        IndiceMassaCorporal imc = calculadoraImc.calcular();
 
         if (imc.estaObeso()) {
             System.out.println("Obeso");
