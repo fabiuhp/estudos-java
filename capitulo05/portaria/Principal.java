@@ -8,5 +8,6 @@ public class Principal {
 
         CadastroPortaria cadastroPortaria = new CadastroPortaria();
         cadastroPortaria.cadastrar(visitante, 10);
+        cadastroPortaria.cadastrar(visitante);
     }
 }
