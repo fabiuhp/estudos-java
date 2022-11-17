@@ -6,10 +6,7 @@ public class Principal {
         visitante.nome = "Joao";
         visitante.idade = 15;
 
-        if (visitante.possuiAcesso()) {
-            System.out.println("Acesso não permitido.");
-        } else {
-            System.out.println("Acesso liberado.");
-        }
+        CadastroPortaria cadastroPortaria = new CadastroPortaria();
+        cadastroPortaria.cadastrar(visitante, 10);
     }
 }
