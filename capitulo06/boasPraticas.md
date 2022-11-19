@@ -28,3 +28,18 @@ Cliente cliente2;
 Cliente clienteCadastrado;
 Cliente novoCliente;
 
+Com as linguagens modernas, o uso de comentários passou a ser cada vez menos necessário. Porém, em alguns casos, pode ser necessário para explicar coisas muito específicas.
+Quanto mais descritivo for seu código, menos comentários se fazem necessários.
+
+Esse exemplo abaixo, mostra que os comentários são ***desnecessários***, visto que está claro o que cada variável é.
+
+~~~java
+public class Contribuinte {
+    //idade do contribuinte
+    int idade;
+    //tempo de contribuição em anos do contribuinte
+    int tempoContribuicaoEmAnos;
+}
+~~~
+
+Além disso, existe o risco dos programadores refatorarem os códigos explicativos. Normalmente fazemos um refat nas variáveis e nomes de métodos por meio da IDE, mas ela não tem como adivinhar e refatorar os comentários.
