@@ -43,3 +43,7 @@ public class Contribuinte {
 ~~~
 
 Além disso, existe o risco dos programadores refatorarem os códigos explicativos. Normalmente fazemos um refat nas variáveis e nomes de métodos por meio da IDE, mas ela não tem como adivinhar e refatorar os comentários.
+
+Métodos devem ser especializados. Fazer o minimo necessário e abstrair responsabilidades sempre que possível.
+
+Valide os argumentos passados em métodos, principalmente metodos publicos. Os privados, dependendo da situação, ainda podem passar sem a validação.
