@@ -47,3 +47,12 @@ Além disso, existe o risco dos programadores refatorarem os códigos explicativ
 Métodos devem ser especializados. Fazer o minimo necessário e abstrair responsabilidades sempre que possível.
 
 Valide os argumentos passados em métodos, principalmente metodos publicos. Os privados, dependendo da situação, ainda podem passar sem a validação.
+
+Wrappers são objetos que 'embrulham' o tipo primitivo dentro dela. Possibilitando por exemplo que um valor int receba null. São casos muito específicos, mas que podem acontecer.
+Todo tipo primitivo tem um wrapper.
+Lembrar de usar os métodos estáticos de classe para fazer a conversão dos valores.
+Exemplo:
+~~~java
+Integer valor = Integer.valueOf(25);
+Integer valor = Integer.valueOf("25");
+~~~
