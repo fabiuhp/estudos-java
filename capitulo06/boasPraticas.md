@@ -74,3 +74,5 @@ System.out.println(valor3 == valor4); // false;
 Isso ocorre por que o operador de comparação `==` quando utilizado em objetos(classe Integer) compara o endereço de memória, mas no caso do valor 127 ele dá true pois existe um cache da classe Integer.valueOf(). Ou seja, ele reaproveita o espaçõ em memória para os dois, com o intuito de tornar a execução mais rápida.
 
 O mesmo ocorre com Strings, onde existe uma `String pool` no java, caso você insira o mesmo valor para duas strings, o Java vai utilizar o mesmo espaço em memória para agilizar o processo.
+
+Tipos primitivos são mais performáticos do que os Wrappers.
