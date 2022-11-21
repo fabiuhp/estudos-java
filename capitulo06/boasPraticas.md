@@ -56,3 +56,21 @@ Exemplo:
 Integer valor = Integer.valueOf(25);
 Integer valor = Integer.valueOf("25");
 ~~~
+
+No trecho de código a seguir, ocorre um evento muito peculiar.
+
+~~~java
+Integer valor1 = 127;
+Integer valor2 = 127;
+
+System.out.println(valor1 == valor2); // true;
+
+Integer valor3 = 127;
+Integer valor4 = 127;
+
+System.out.println(valor3 == valor4); // false;
+~~~
+
+Isso ocorre por que o operador de comparação `==` quando utilizado em objetos(classe Integer) compara o endereço de memória, mas no caso do valor 127 ele dá true pois existe um cache da classe Integer.valueOf(). Ou seja, ele reaproveita o espaçõ em memória para os dois, com o intuito de tornar a execução mais rápida.
+
+O mesmo ocorre com Strings, onde existe uma `String pool` no java, caso você insira o mesmo valor para duas strings, o Java vai utilizar o mesmo espaço em memória para agilizar o processo.
