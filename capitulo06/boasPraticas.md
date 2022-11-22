@@ -65,8 +65,8 @@ Integer valor2 = 127;
 
 System.out.println(valor1 == valor2); // true;
 
-Integer valor3 = 127;
-Integer valor4 = 127;
+Integer valor3 = 128;
+Integer valor4 = 128;
 
 System.out.println(valor3 == valor4); // false;
 ~~~
