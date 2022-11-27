@@ -10,12 +10,10 @@ public class Principal {
         var cartao = new Cartao("Joao Souza");
 
 
-        //Eu posso burlar as regras por conta da falta de encapsulamento
-        cartao.saldo = 500;
-        // var servicoDepositoPix = new ServicoDepositoPix();
-        // Recibo reciboDeposito = servicoDepositoPix.deposito(cartao, 500);
+        var servicoDepositoPix = new ServicoDepositoPix();
+        Recibo reciboDeposito = servicoDepositoPix.deposito(cartao, 500);
 
-        // reciboDeposito.imprimir();
+        reciboDeposito.imprimir();
 
 
         var servicoPagamento = new ServicoPagamentoOnline();
@@ -23,7 +21,7 @@ public class Principal {
 
         reciboPagamento.imprimir();
 
-        System.out.printf("Titular: %s%n", cartao.titular);
-        System.out.printf("Saldo: %.2f%n", cartao.saldo);
+        System.out.printf("Titular: %s%n", cartao.obterTitular());
+        System.out.printf("Saldo: %.2f%n", cartao.obterSaldo());
     }
 }
