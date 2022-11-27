@@ -8,15 +8,21 @@ public class Cartao {
     private String titular;
     private double saldo;
 
+    public Cartao() {}
+
     public Cartao(String titular) {
         this.titular = titular;
     }
 
-    public String obterTitular() {
+    public String getTitular() {
         return titular;
     }
 
-    public double obterSaldo() {
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public double getSaldo() {
         return saldo;
     }
 
@@ -28,7 +34,7 @@ public class Cartao {
     }
 
     public void debitar(double valorDebito) {
-        if (valorDebito > saldo) {
+        if (valorDebito > getSaldo()) {
             throw new IllegalArgumentException("Debito maior que saldo");
         }
         saldo -= valorDebito - TARIFA_DEPOSITO;

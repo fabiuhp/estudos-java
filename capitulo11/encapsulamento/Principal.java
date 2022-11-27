@@ -17,11 +17,11 @@ public class Principal {
 
 
         var servicoPagamento = new ServicoPagamentoOnline();
-        Recibo reciboPagamento = servicoPagamento.efetuarPagamento(supermercado, cartao, 100);
+        Recibo reciboPagamento = servicoPagamento.efetuarPagamento(supermercado, cartao, 10000);
 
         reciboPagamento.imprimir();
 
-        System.out.printf("Titular: %s%n", cartao.obterTitular());
-        System.out.printf("Saldo: %.2f%n", cartao.obterSaldo());
+        System.out.printf("Titular: %s%n", cartao.getTitular());
+        System.out.printf("Saldo: %.2f%n", cartao.getSaldo());
     }
 }
