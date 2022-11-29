@@ -1,11 +1,13 @@
 package capitulo12.banco;
 
-public class Conta {
+public class ContaInvestimento {
     
     private Titular titular;
     private int agencia;
     private int numero;
     private double saldo;
+
+    private double valorTotalRendimentos;
 
     public int getAgencia() {
         return agencia;
@@ -33,6 +35,17 @@ public class Conta {
 
     public double getSaldo() {
         return saldo;
+    }
+
+    public double getValorTotalRendimentos() {
+        return valorTotalRendimentos;
+    }
+
+    public void creditarRendimentos(double percentualJuros) {
+        double valorRendimentos = getSaldo() * percentualJuros / 100;
+        valorTotalRendimentos += valorRendimentos;
+        
+        depositar(valorRendimentos);
     }
 
     public void sacar(double valorSaque) {
