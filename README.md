@@ -15,5 +15,7 @@ Repositório criado para o estudo da linguagem Java, do básico ao avançado, bu
 9. Gerenciamento de Memória do Java
 10. Construtores, pacotes e visibilidade
 11. Encapsulamento, JavaBeans e Records
-12. Herança, Polimorfismo e Classes Abstratas
-13. Em breve mais.
+12. Herança
+13. Polimorfismo e Classes Abstratas
+14. Exceções
+15. Interfaces e classes seladas

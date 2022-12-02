@@ -29,6 +29,7 @@ public class ContaEspecial extends ContaInvestimento {
         sacar(getTarifaMensal());
     }
 
+    @Override
     public void imprimirDemonstrativo() {
         System.out.println();
         System.out.printf("Agência: %d%n", getAgencia());
