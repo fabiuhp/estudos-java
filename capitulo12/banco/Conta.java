@@ -7,28 +7,22 @@ public class Conta {
     private int numero;
     protected double saldo;
 
-    public int getAgencia() {
-        return agencia;
+    public Conta(Titular titular, int agencia, int numero) {
+        this.titular = titular;
+        this.agencia = agencia;
+        this.numero = numero;
     }
 
-    public void setAgencia(int agencia) {
-        this.agencia = agencia;
+    public int getAgencia() {
+        return agencia;
     }
 
     public Titular getTitular() {
         return titular;
     }
 
-    public void setTitular(Titular titular) {
-        this.titular = titular;
-    }
-
     public int getNumero() {
         return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
     }
 
     public double getSaldo() {

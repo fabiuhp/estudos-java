@@ -6,10 +6,7 @@ import capitulo12.banco.Titular;
 public class Principal2 {
     public static void main(String[] args) {
         
-        ContaInvestimento conta1 = new ContaInvestimento();
-        conta1.setTitular(new Titular("Fabio", "12345"));
-        conta1.setAgencia(1234);
-        conta1.setNumero(1111);
+        ContaInvestimento conta1 = new ContaInvestimento(new Titular("Fabio", "12345"), 1234, 1111);
 
         conta1.depositar(100);
         conta1.imprimirDemonstrativo();
