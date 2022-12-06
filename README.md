@@ -17,5 +17,10 @@ Repositório criado para o estudo da linguagem Java, do básico ao avançado, bu
 11. Encapsulamento, JavaBeans e Records
 12. Herança
 13. Polimorfismo e Classes Abstratas
-14. Exceções
-15. Interfaces e classes seladas
+14. Interfaces
+15. Boas práticas de herança e interfaces
+16. Exceções (em breve)
+17. Generics (em breve)
+18. Collections Framework (em breve)
+19. Enumerações (em breve)
+20. Trabalhando com strings (em breve)
