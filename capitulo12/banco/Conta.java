@@ -29,6 +29,10 @@ public class Conta {
         return saldo;
     }
 
+    public boolean possuiGratuidadeImpressao() {
+        return false;
+    }
+
     public void sacar(double valorSaque) {
         if (valorSaque <= 0) {
             throw new IllegalArgumentException("Valor deve ser maior que zero.");

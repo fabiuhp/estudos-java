@@ -3,6 +3,11 @@ package capitulo12.banco;
 public class ContaInvestimento extends Conta {
 
     private double valorTotalRendimentos;
+
+    @Override
+    public boolean possuiGratuidadeImpressao() {
+        return getValorTotalRendimentos() > 0;
+    }
     
     public ContaInvestimento(Titular titular, int agencia, int numero) {
         super(titular, agencia, numero);
