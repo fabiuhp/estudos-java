@@ -18,9 +18,7 @@ public abstract class NotaFiscal {
         return valorTotal;
     }
 
-    public double calcularImpostos() {
-        return 0;
-    }
+    public abstract double calcularImpostos();
 
     public void emitir() {
         System.out.printf("Emitindo nota fiscal para: %s%n", getDescricao());
