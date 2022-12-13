@@ -1,6 +1,6 @@
 package capitulo13;
 
-public class NotaFiscal {
+public abstract class NotaFiscal {
     
     private String descricao;
     private double valorTotal;
