@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("medico")
@@ -29,6 +30,20 @@ public class MedicoController {
 
     @GetMapping
     public Page<DadosListagemMedico> listar(@PageableDefault(size=10, sort = {"nome"}) Pageable pageable) {
-        return medicoRepository.findAll(pageable).map(DadosListagemMedico::new);
+        return medicoRepository.findAllByAtivoTrue(pageable).map(DadosListagemMedico::new);
+    }
+
+    @PutMapping
+    @Transactional
+    public void atualizar(@RequestBody @Valid DadosAtualizarMedico dados) {
+        Medico medico = medicoRepository.getReferenceById(dados.id());
+        medico.atualizarInformacoes(dados);
+    }
+
+    @DeleteMapping("/{id}")
+    @Transactional
+    public void excluir(@PathVariable Long id) {
+        Medico medico = medicoRepository.getReferenceById(id);
+        medico.excluir();
     }
 }
